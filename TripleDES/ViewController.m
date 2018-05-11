@@ -25,7 +25,7 @@ static NSString *kEncrypt = nil;
 
 // 加密
 - (IBAction)encryptWith3DES:(id)sender {
-    NSString *encrypt = [BWTTripleDES doEncryptStr:kEncryptString];
+    NSString *encrypt = [BWTTripleDES encryptString:kEncryptString];
     kEncrypt = encrypt;
     NSLog(@"******************** \n\n %@ \n\n **********", kEncrypt);
     [AlertTool alertViewWithMessage:kEncrypt];
@@ -37,9 +37,9 @@ static NSString *kEncrypt = nil;
         [AlertTool alertViewWithMessage:@"请先加密"];
         return;
     }
-    BOOL decrypt = [BWTTripleDES doDecEncryptStr:kEncrypt];
+    NSString *decrypt = [BWTTripleDES decryptString:kEncrypt];
     NSString *message = nil;
-    if (decrypt) {
+    if ([decrypt isEqualToString:kEncryptString]) {
         message = @"解密成功";
     } else {
         message = @"解密失败";

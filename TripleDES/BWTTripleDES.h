@@ -10,13 +10,36 @@
 
 @interface BWTTripleDES : NSObject
 
-/**字符串加密 */
-+ (NSString *)doEncryptStr:(NSString *)originalStr;
-/**字符串解密 */
-+ (NSString*)doDecEncryptStr:(NSString *)encryptStr;
-/**十六进制解密 */
--(NSString *)doEncryptHex:(NSString *)originalStr;
-/**十六进制加密 */
--(NSString*)doDecEncryptHex:(NSString *)encryptStr;
+/**
+ 字符串加密
+
+ @param string 待加密字符串
+ @return 加密之后的密文
+ */
++ (NSString *)encryptString:(NSString *)string;
+
+/**
+ 字符串解密
+
+ @param encryptString 待解密字符串
+ @return 解密之后的明文
+ */
++ (NSString *)decryptString:(NSString *)encryptString;
+
+/**
+ 十六进制加密
+
+ @param hexString 待加密十六进制字符串
+ @return 加密之后的密文
+ */
++ (NSString *)encryptHexString:(NSString *)hexString;
+
+/**
+ 十六进制解密
+
+ @param encryptHexString 待解密十六进制字符串
+ @return 解密之后的明文
+ */
++ (NSString *)decryptHexString:(NSString *)encryptHexString;
 
 @end
