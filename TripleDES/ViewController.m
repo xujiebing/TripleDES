@@ -1,12 +1,17 @@
 //
 //  ViewController.m
-//  TripleDES
+//  RAC+SHA1WithRSA
 //
-//  Created by 徐结兵 on 2018/5/11.
-//  Copyright © 2018年 八维通. All rights reserved.
+//  Created by 徐结兵 on 2018/5/8.
+//  Copyright © 2018年 xujiebing. All rights reserved.
 //
 
 #import "ViewController.h"
+#import "BWTTripleDES.h"
+#import "AlertTool.h"
+
+static NSString *kEncryptString = @"待加密信息";
+static NSString *kEncrypt = nil;
 
 @interface ViewController ()
 
@@ -16,13 +21,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
+// 加密
+- (IBAction)encryptWith3DES:(id)sender {
+    NSString *encrypt = [BWTTripleDES doEncryptStr:kEncryptString];
+    kEncrypt = encrypt;
+    NSLog(@"******************** \n\n %@ \n\n **********", kEncrypt);
+    [AlertTool alertViewWithMessage:kEncrypt];
+}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+// 解密
+- (IBAction)decryptWith3DES:(id)sender {
+    if (kEncrypt.length == 0) {
+        [AlertTool alertViewWithMessage:@"请先加密"];
+        return;
+    }
+    BOOL decrypt = [BWTTripleDES doDecEncryptStr:kEncrypt];
+    NSString *message = nil;
+    if (decrypt) {
+        message = @"解密成功";
+    } else {
+        message = @"解密失败";
+    }
+    [AlertTool alertViewWithMessage:message];
+    NSLog(@"******************** \n\n %@ \n\n **********", message);
 }
 
 

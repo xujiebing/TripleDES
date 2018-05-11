@@ -13,6 +13,9 @@
 		9B1C824220A575FE00F99506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1C824120A575FE00F99506 /* Assets.xcassets */; };
 		9B1C824520A575FE00F99506 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1C824320A575FE00F99506 /* LaunchScreen.storyboard */; };
 		9B1C824820A575FE00F99506 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C824720A575FE00F99506 /* main.m */; };
+		9B1C825020A5764800F99506 /* BWTTripleDES.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C824F20A5764800F99506 /* BWTTripleDES.m */; };
+		9B1C825320A576F100F99506 /* NSData+BWTBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C825120A576F100F99506 /* NSData+BWTBase64.m */; };
+		9B1C825620A5783C00F99506 /* AlertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C825520A5783C00F99506 /* AlertTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		9B1C824420A575FE00F99506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B1C824620A575FE00F99506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B1C824720A575FE00F99506 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9B1C824E20A5764800F99506 /* BWTTripleDES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWTTripleDES.h; sourceTree = "<group>"; };
+		9B1C824F20A5764800F99506 /* BWTTripleDES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWTTripleDES.m; sourceTree = "<group>"; };
+		9B1C825120A576F100F99506 /* NSData+BWTBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+BWTBase64.m"; sourceTree = "<group>"; };
+		9B1C825220A576F100F99506 /* NSData+BWTBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+BWTBase64.h"; sourceTree = "<group>"; };
+		9B1C825420A5783B00F99506 /* AlertTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertTool.h; sourceTree = "<group>"; };
+		9B1C825520A5783C00F99506 /* AlertTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,8 @@
 		9B1C823720A575FE00F99506 /* TripleDES */ = {
 			isa = PBXGroup;
 			children = (
+				9B1C825420A5783B00F99506 /* AlertTool.h */,
+				9B1C825520A5783C00F99506 /* AlertTool.m */,
 				9B1C823820A575FE00F99506 /* AppDelegate.h */,
 				9B1C823920A575FE00F99506 /* AppDelegate.m */,
 				9B1C823B20A575FE00F99506 /* ViewController.h */,
@@ -67,6 +78,10 @@
 				9B1C824320A575FE00F99506 /* LaunchScreen.storyboard */,
 				9B1C824620A575FE00F99506 /* Info.plist */,
 				9B1C824720A575FE00F99506 /* main.m */,
+				9B1C824E20A5764800F99506 /* BWTTripleDES.h */,
+				9B1C824F20A5764800F99506 /* BWTTripleDES.m */,
+				9B1C825220A576F100F99506 /* NSData+BWTBase64.h */,
+				9B1C825120A576F100F99506 /* NSData+BWTBase64.m */,
 			);
 			path = TripleDES;
 			sourceTree = "<group>";
@@ -102,7 +117,7 @@
 				TargetAttributes = {
 					9B1C823420A575FE00F99506 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -142,8 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B1C825620A5783C00F99506 /* AlertTool.m in Sources */,
 				9B1C823D20A575FE00F99506 /* ViewController.m in Sources */,
 				9B1C824820A575FE00F99506 /* main.m in Sources */,
+				9B1C825320A576F100F99506 /* NSData+BWTBase64.m in Sources */,
+				9B1C825020A5764800F99506 /* BWTTripleDES.m in Sources */,
 				9B1C823A20A575FE00F99506 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,12 +296,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = NT6BP8667Z;
 				INFOPLIST_FILE = TripleDES/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = BWTON.TripleDES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bwton.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "524e2b45-98ea-4065-8292-d9046a8b6009";
+				PROVISIONING_PROFILE_SPECIFIER = bwt_dev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -292,12 +312,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NT6BP8667Z;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TripleDES/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = BWTON.TripleDES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bwton.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
