@@ -13,9 +13,12 @@
 		9B1C824220A575FE00F99506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1C824120A575FE00F99506 /* Assets.xcassets */; };
 		9B1C824520A575FE00F99506 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1C824320A575FE00F99506 /* LaunchScreen.storyboard */; };
 		9B1C824820A575FE00F99506 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C824720A575FE00F99506 /* main.m */; };
-		9B1C825020A5764800F99506 /* BWTTripleDES.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C824F20A5764800F99506 /* BWTTripleDES.m */; };
-		9B1C825320A576F100F99506 /* NSData+BWTBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C825120A576F100F99506 /* NSData+BWTBase64.m */; };
 		9B1C825620A5783C00F99506 /* AlertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C825520A5783C00F99506 /* AlertTool.m */; };
+		9B840E5622D38D6900B9ABA8 /* DBDESManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B840E4E22D38D6900B9ABA8 /* DBDESManager.m */; };
+		9B840E5722D38D6900B9ABA8 /* BWTTripleDES.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B840E4F22D38D6900B9ABA8 /* BWTTripleDES.m */; };
+		9B840E5822D38D6900B9ABA8 /* NSData+BWTBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B840E5122D38D6900B9ABA8 /* NSData+BWTBase64.m */; };
+		9B840E5922D38D6900B9ABA8 /* NSString+BWTPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B840E5322D38D6900B9ABA8 /* NSString+BWTPad.m */; };
+		9B840E5C22D38D9600B9ABA8 /* BWTXOR.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B840E5A22D38D9600B9ABA8 /* BWTXOR.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,12 +32,18 @@
 		9B1C824420A575FE00F99506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B1C824620A575FE00F99506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B1C824720A575FE00F99506 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9B1C824E20A5764800F99506 /* BWTTripleDES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWTTripleDES.h; sourceTree = "<group>"; };
-		9B1C824F20A5764800F99506 /* BWTTripleDES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWTTripleDES.m; sourceTree = "<group>"; };
-		9B1C825120A576F100F99506 /* NSData+BWTBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+BWTBase64.m"; sourceTree = "<group>"; };
-		9B1C825220A576F100F99506 /* NSData+BWTBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+BWTBase64.h"; sourceTree = "<group>"; };
 		9B1C825420A5783B00F99506 /* AlertTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertTool.h; sourceTree = "<group>"; };
 		9B1C825520A5783C00F99506 /* AlertTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertTool.m; sourceTree = "<group>"; };
+		9B840E4E22D38D6900B9ABA8 /* DBDESManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBDESManager.m; sourceTree = "<group>"; };
+		9B840E4F22D38D6900B9ABA8 /* BWTTripleDES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWTTripleDES.m; sourceTree = "<group>"; };
+		9B840E5022D38D6900B9ABA8 /* NSString+BWTPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BWTPad.h"; sourceTree = "<group>"; };
+		9B840E5122D38D6900B9ABA8 /* NSData+BWTBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+BWTBase64.m"; sourceTree = "<group>"; };
+		9B840E5222D38D6900B9ABA8 /* DBDESManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBDESManager.h; sourceTree = "<group>"; };
+		9B840E5322D38D6900B9ABA8 /* NSString+BWTPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BWTPad.m"; sourceTree = "<group>"; };
+		9B840E5422D38D6900B9ABA8 /* BWTTripleDES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWTTripleDES.h; sourceTree = "<group>"; };
+		9B840E5522D38D6900B9ABA8 /* NSData+BWTBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+BWTBase64.h"; sourceTree = "<group>"; };
+		9B840E5A22D38D9600B9ABA8 /* BWTXOR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWTXOR.m; sourceTree = "<group>"; };
+		9B840E5B22D38D9600B9ABA8 /* BWTXOR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWTXOR.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +76,7 @@
 		9B1C823720A575FE00F99506 /* TripleDES */ = {
 			isa = PBXGroup;
 			children = (
+				9B840E4D22D38D6900B9ABA8 /* DES */,
 				9B1C825420A5783B00F99506 /* AlertTool.h */,
 				9B1C825520A5783C00F99506 /* AlertTool.m */,
 				9B1C823820A575FE00F99506 /* AppDelegate.h */,
@@ -78,12 +88,25 @@
 				9B1C824320A575FE00F99506 /* LaunchScreen.storyboard */,
 				9B1C824620A575FE00F99506 /* Info.plist */,
 				9B1C824720A575FE00F99506 /* main.m */,
-				9B1C824E20A5764800F99506 /* BWTTripleDES.h */,
-				9B1C824F20A5764800F99506 /* BWTTripleDES.m */,
-				9B1C825220A576F100F99506 /* NSData+BWTBase64.h */,
-				9B1C825120A576F100F99506 /* NSData+BWTBase64.m */,
 			);
 			path = TripleDES;
+			sourceTree = "<group>";
+		};
+		9B840E4D22D38D6900B9ABA8 /* DES */ = {
+			isa = PBXGroup;
+			children = (
+				9B840E5422D38D6900B9ABA8 /* BWTTripleDES.h */,
+				9B840E4F22D38D6900B9ABA8 /* BWTTripleDES.m */,
+				9B840E5222D38D6900B9ABA8 /* DBDESManager.h */,
+				9B840E4E22D38D6900B9ABA8 /* DBDESManager.m */,
+				9B840E5022D38D6900B9ABA8 /* NSString+BWTPad.h */,
+				9B840E5322D38D6900B9ABA8 /* NSString+BWTPad.m */,
+				9B840E5522D38D6900B9ABA8 /* NSData+BWTBase64.h */,
+				9B840E5122D38D6900B9ABA8 /* NSData+BWTBase64.m */,
+				9B840E5B22D38D9600B9ABA8 /* BWTXOR.h */,
+				9B840E5A22D38D9600B9ABA8 /* BWTXOR.m */,
+			);
+			path = DES;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,12 +180,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B840E5722D38D6900B9ABA8 /* BWTTripleDES.m in Sources */,
+				9B840E5922D38D6900B9ABA8 /* NSString+BWTPad.m in Sources */,
 				9B1C825620A5783C00F99506 /* AlertTool.m in Sources */,
 				9B1C823D20A575FE00F99506 /* ViewController.m in Sources */,
+				9B840E5622D38D6900B9ABA8 /* DBDESManager.m in Sources */,
+				9B840E5C22D38D9600B9ABA8 /* BWTXOR.m in Sources */,
 				9B1C824820A575FE00F99506 /* main.m in Sources */,
-				9B1C825320A576F100F99506 /* NSData+BWTBase64.m in Sources */,
-				9B1C825020A5764800F99506 /* BWTTripleDES.m in Sources */,
 				9B1C823A20A575FE00F99506 /* AppDelegate.m in Sources */,
+				9B840E5822D38D6900B9ABA8 /* NSData+BWTBase64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
